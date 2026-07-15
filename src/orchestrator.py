@@ -1,6 +1,7 @@
 """Main orchestrator coordinating the entire workflow."""
 
 import asyncio
+import os
 from collections import defaultdict
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
@@ -297,6 +298,19 @@ class HorizonOrchestrator:
                     self.console.print(f"📄 Copied {lang.upper()} summary to GitHub Pages: {dest_path}\n")
                 except Exception as e:
                     self.console.print(f"[yellow]⚠️  Failed to copy {lang.upper()} summary to docs/: {e}[/yellow]\n")
+
+                # Copy to custom output directory if HORIZON_EXTRA_OUTPUT_DIR is set
+                extra_output_dir = os.environ.get("HORIZON_EXTRA_OUTPUT_DIR", "")
+                if extra_output_dir:
+                    try:
+                        extra_path = Path(extra_output_dir)
+                        extra_path.mkdir(parents=True, exist_ok=True)
+                        extra_file = extra_path / f"horizon-{today}-{lang}.md"
+                        with open(extra_file, "w", encoding="utf-8") as f:
+                            f.write(summary)
+                        self.console.print(f"📄 Copied {lang.upper()} summary to custom directory: {extra_file}\n")
+                    except Exception as e:
+                        self.console.print(f"[yellow]⚠️  Failed to copy {lang.upper()} summary to extra dir: {e}[/yellow]\n")
 
                 # Send email if configured
                 if self.email_manager and self.config.email and self.config.email.enabled:
