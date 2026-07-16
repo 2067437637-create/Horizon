@@ -21,19 +21,13 @@
         "name": "Stronger by Science",
         "url": "https://strongerbyscience.com/feed/",
         "enabled": true,
-        "category": "运动科学"
-      },
-      {
-        "name": "Nature - Health Sciences",
-        "url": "https://www.nature.com/subjects/health-sciences.rss",
-        "enabled": true,
-        "category": "运动科学"
+        "category": "健身"
       },
       {
         "name": "ScienceDaily - Fitness",
         "url": "https://www.sciencedaily.com/rss/health_medicine/fitness.xml",
         "enabled": true,
-        "category": "运动科学"
+        "category": "健身"
       },
       {
         "name": "ScienceDaily - Nutrition",
@@ -42,22 +36,10 @@
         "category": "营养学"
       },
       {
-        "name": "BBC Health",
-        "url": "https://feeds.bbci.co.uk/news/health/rss.xml",
-        "enabled": true,
-        "category": "热点趋势"
-      },
-      {
         "name": "The Guardian - Health & Fitness",
         "url": "https://www.theguardian.com/lifeandstyle/fitness/rss",
         "enabled": true,
-        "category": "运动科学"
-      },
-      {
-        "name": "New Scientist - Health",
-        "url": "https://www.newscientist.com/subject/health/feed/",
-        "enabled": true,
-        "category": "热点趋势"
+        "category": "健身"
       },
       {
         "name": "Harvard Nutrition Source",
@@ -66,16 +48,10 @@
         "category": "营养学"
       },
       {
-        "name": "知乎日报",
-        "url": "https://www.zhihu.com/rss",
-        "enabled": true,
-        "category": "热点趋势"
-      },
-      {
         "name": "ACE Fit - Exercise Science",
         "url": "https://www.acefitness.org/feed/",
         "enabled": true,
-        "category": "运动科学"
+        "category": "健身"
       },
       {
         "name": "NutritionFacts.org",
@@ -84,16 +60,46 @@
         "category": "营养学"
       },
       {
-        "name": "Medscape - Sports Medicine",
-        "url": "https://www.medscape.com/rss/sportsmedicine-public.xml",
+        "name": "Examine.com",
+        "url": "https://examine.com/rss/",
         "enabled": true,
-        "category": "运动科学"
+        "category": "补剂"
       },
       {
-        "name": "WHO - Health News",
-        "url": "https://www.who.int/rss-feeds/news-english.xml",
+        "name": "PubMed - Exercise & Sports Science",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/rss/search/1fcsSX0msFMdg6FLhjNi3wvHvfPqXm3pwYI1K7K5WGNnH6cOSo/?limit=15&utm_campaign=pubmed-2&fc=20250716",
         "enabled": true,
-        "category": "热点趋势"
+        "category": "健身"
+      },
+      {
+        "name": "PubMed - Dietary Supplements",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/rss/search/1Jh7bJY5G7HOVfMg6FfiqU87OnrRNJceix2HSc4cFAZm5AznCT/?limit=15&utm_campaign=pubmed-2&fc=20250716",
+        "enabled": true,
+        "category": "补剂"
+      },
+      {
+        "name": "知乎 - 健身",
+        "url": "https://www.zhihu.com/rss",
+        "enabled": true,
+        "category": "健身"
+      },
+      {
+        "name": "MASS Research Review",
+        "url": "https://www.strongerbyscience.com/category/mass/feed/",
+        "enabled": true,
+        "category": "健身"
+      },
+      {
+        "name": "Trainerize - Nutrition Tips",
+        "url": "https://www.trainerize.com/blog/category/nutrition/feed/",
+        "enabled": true,
+        "category": "营养学"
+      },
+      {
+        "name": "生物黑客 - Biohacking News",
+        "url": "https://biohacking.news/feed.xml",
+        "enabled": true,
+        "category": "补剂"
       }
     ],
     "reddit": {
@@ -104,18 +110,27 @@
           "enabled": true,
           "sort": "new",
           "time_filter": "day",
-          "fetch_limit": 10,
+          "fetch_limit": 15,
           "min_score": 10,
-          "category": "运动科学"
+          "category": "健身"
         },
         {
           "subreddit": "nutrition",
           "enabled": true,
           "sort": "new",
           "time_filter": "day",
-          "fetch_limit": 10,
+          "fetch_limit": 15,
           "min_score": 10,
           "category": "营养学"
+        },
+        {
+          "subreddit": "Supplements",
+          "enabled": true,
+          "sort": "new",
+          "time_filter": "day",
+          "fetch_limit": 15,
+          "min_score": 5,
+          "category": "补剂"
         },
         {
           "subreddit": "AdvancedFitness",
@@ -124,25 +139,43 @@
           "time_filter": "week",
           "fetch_limit": 10,
           "min_score": 5,
-          "category": "运动科学"
+          "category": "健身"
         },
         {
           "subreddit": "bodyweightfitness",
           "enabled": true,
           "sort": "new",
           "time_filter": "day",
-          "fetch_limit": 5,
+          "fetch_limit": 8,
           "min_score": 5,
-          "category": "运动科学"
+          "category": "健身"
         },
         {
-          "subreddit": "science",
+          "subreddit": "weightroom",
           "enabled": true,
-          "sort": "hot",
+          "sort": "new",
           "time_filter": "day",
           "fetch_limit": 10,
-          "min_score": 50,
-          "category": "热点趋势"
+          "min_score": 5,
+          "category": "健身"
+        },
+        {
+          "subreddit": "veganfitness",
+          "enabled": true,
+          "sort": "new",
+          "time_filter": "week",
+          "fetch_limit": 5,
+          "min_score": 5,
+          "category": "营养学"
+        },
+        {
+          "subreddit": "Nootropics",
+          "enabled": true,
+          "sort": "new",
+          "time_filter": "week",
+          "fetch_limit": 10,
+          "min_score": 10,
+          "category": "补剂"
         }
       ],
       "users": [],
@@ -165,7 +198,7 @@
     },
     "gdelt": {
       "enabled": true,
-      "query": "exercise science nutrition fitness health",
+      "query": "fitness training nutrition supplementation bodybuilding workout dietary supplements",
       "mode": "ArtList",
       "max_records": 30,
       "timespan": "24h",
@@ -175,7 +208,7 @@
     },
     "google_news": {
       "enabled": true,
-      "query": "fitness exercise nutrition health 运动 健身 营养",
+      "query": "fitness nutrition supplements workout 健身 营养 补剂 增肌 减脂 蛋白粉 肌酸",
       "language": "zh",
       "country": "CN",
       "max_results": 30,
@@ -185,22 +218,26 @@
   "filtering": {
     "ai_score_threshold": 5.0,
     "time_window_hours": 24,
-    "max_items": 20,
+    "max_items": 30,
     "category_groups": {
-      "运动科学": {
-        "limit": 7,
-        "categories": ["运动科学"]
+      "健身": {
+        "limit": 12,
+        "categories": ["健身"]
       },
       "营养学": {
-        "limit": 7,
+        "limit": 10,
         "categories": ["营养学"]
       },
+      "补剂": {
+        "limit": 8,
+        "categories": ["补剂"]
+      },
       "热点趋势": {
-        "limit": 6,
+        "limit": 5,
         "categories": ["热点趋势", "news"]
       }
     },
-    "default_group": "other",
+    "default_group": "其他",
     "default_group_limit": 2
   }
 }
